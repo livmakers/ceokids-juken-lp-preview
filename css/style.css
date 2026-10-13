@@ -25,7 +25,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hd-h) + 12px);-webkit-text-size-adjust:100%}
-body{margin:0;font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height:1.85;font-size:16px;overflow-x:hidden;word-break:normal;overflow-wrap:anywhere;line-break:strict}
+body{margin:0;font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height:1.85;font-size:1rem;overflow-x:hidden;word-break:normal;overflow-wrap:anywhere;line-break:strict}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:var(--f-head);line-height:1.35;margin:0;letter-spacing:.02em}
@@ -401,3 +401,7 @@ h1,h2,h3,.quote p,.worry__answer,.final__title,.final__pre,.hero__sub,.lead,.wor
 .quote p{line-height:1.6}
 /* 本文・表・リストも文節で折り返す(Chrome/Edge。他ブラウザは通常の禁則) */
 body{word-break:auto-phrase}
+/* PC表示をさらに大きく(2026-10-13 BOSS指摘) */
+@media (min-width:1024px){html{font-size:118.75%}.wrap{width:min(1240px,100% - 64px)}.hero__in{width:min(1240px,100% - 64px)}}
+@media (min-width:1280px){html{font-size:125%}}
+@media (min-width:1680px){html{font-size:131.25%}.wrap,.hero__in{width:min(1320px,100% - 80px)}}
