@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- [要確認] 公開URL確定後に loc を差し替え、既存サイトのsitemapに統合 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ceokidsacademy.com/juken/</loc><lastmod>2026-10-13</lastmod></url>
+</urlset>
