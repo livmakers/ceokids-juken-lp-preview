@@ -374,3 +374,23 @@ ul,ol{margin:0;padding:0;list-style:none}
 }
 h1,h2,h3,.quote p,.worry__answer,.final__title,.hero__sub{text-wrap:balance}
 .lead,.hero__lead,.note{text-wrap:pretty}
+
+/* ===== 可読性・解像度の調整(PCで小さい/ぼやける対策) ===== */
+@media (min-width:1024px){
+  html{font-size:112.5%}               /* PCは本文18px基準に拡大(rem指定が全て連動) */
+  :root{--hd-h:80px}
+  .hd__logo img{height:62px}
+  .hd__nav{font-size:.95rem;gap:28px}
+  .wrap{width:min(1180px,100% - 64px)}
+}
+@media (min-width:1440px){html{font-size:118.75%}}
+.note,.ft__disc{font-size:.85rem}
+.worry__list li,.pcard p,.acc__body li,.cmp__a,.cmp__b,.schools__col li,.teacher__bio li,.steps__list p,.faq__list details p,.ptable th,.ptable td{font-size:1rem}
+.tl__item p,.flow__st p,.rm__m{font-size:.95rem}
+.hero__photo figcaption{font-size:.8rem}
+/* 元画像の解像度を超えて引き伸ばさない */
+.hero__photo{width:min(453px,82vw)}
+.teacher__ph{width:min(400px,86vw)}
+.awards{max-width:900px;margin-inline:auto}
+@media (min-width:600px){.awards{grid-template-columns:repeat(3,minmax(0,290px));justify-content:center}}
+@media (min-width:600px){.fl--coin{top:13%;bottom:auto;left:auto;right:42%}}
