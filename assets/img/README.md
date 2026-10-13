@@ -8,6 +8,7 @@
 | result-sns.webp (258×229) | 実績カード | 同 img/Ann2.png |
 | result-rotary.webp (258×229) | 実績カード | 同 img/Ann1.png |
 | result-contest.webp (258×229) | 実績カード | 同 img/Ann3.png |
+| *@2x.webp | 高精細画面用の2倍画像(上記を拡大・輪郭補正したもの。元写真があれば差替) | — |
 | logo.png (260×200) | ヘッダー/フッター ロゴ | 同 img/logo.png |
 | ogp.png (1200×630) | OGP/Twitterカード(上記写真から生成) | — |
 | favicon.svg | ファビコン(仮・自作) | — |
