@@ -394,3 +394,10 @@ h1,h2,h3,.quote p,.worry__answer,.final__title,.hero__sub{text-wrap:balance}
 .awards{max-width:900px;margin-inline:auto}
 @media (min-width:600px){.awards{grid-template-columns:repeat(3,minmax(0,290px));justify-content:center}}
 @media (min-width:600px){.fl--coin{top:13%;bottom:auto;left:auto;right:42%}}
+
+/* 禁則・文節改行:語の途中で折り返さない */
+.nw{display:inline-block}
+h1,h2,h3,.quote p,.worry__answer,.final__title,.final__pre,.hero__sub,.lead,.worry__q,.acc__t,.teacher__msg p,.voices li,.award figcaption b{word-break:auto-phrase}
+.quote p{line-height:1.6}
+/* 本文・表・リストも文節で折り返す(Chrome/Edge。他ブラウザは通常の禁則) */
+body{word-break:auto-phrase}
